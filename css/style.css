@@ -102,19 +102,7 @@ progress::-moz-progress-bar {
     border-radius: 10px;
 }
 
-.project:hover {
-    /*background-color: #fff;*/
-    background: linear-gradient(90deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.1) 25%,
-        rgba(255, 255, 255, 0.1) 75%,
-        rgba(255, 255, 255, 0.1) 100%);
-    cursor: pointer;
-    cursor: hand;
-    font-weight: bold;
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* For tablets: */
     .project {
         width: 50%;
@@ -122,11 +110,23 @@ progress::-moz-progress-bar {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
     /* For desktop: */
     .project {
         width: 25%;
         box-sizing: border-box;
+    }
+
+    .project:hover {
+        /*background-color: #fff;*/
+        background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.1) 25%,
+            rgba(255, 255, 255, 0.1) 75%,
+            rgba(255, 255, 255, 0.1) 100%);
+        cursor: pointer;
+        cursor: hand;
+        font-weight: bold;
     }
 }
 
