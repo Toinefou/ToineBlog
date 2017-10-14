@@ -5,11 +5,11 @@ html {
 body {
     font-family: 'Handlee', cursive;
     font-size: 13pt;
-    /*background-color: #efefef;*/
     padding: 10px;
     margin: 0;
     background-image: url("../pic/background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
     font-size: 15pt;
