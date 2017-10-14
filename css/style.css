@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 html {
     margin: 0;
     padding: 0;
@@ -5,13 +10,13 @@ html {
 body {
     font-family: 'Handlee', cursive;
     font-size: 13pt;
-    padding: 10px;
+    padding: 0px;
     margin: 0;
-    /*background-image: url("../pic/background.jpg");
+    background-image: url("../pic/background.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top right;
     background-attachment: fixed;
-    background-size: cover;*/
+    background-size: cover;
 }
 h1 {
     font-size: 15pt;
@@ -28,6 +33,40 @@ p {
     padding: 0;
     margin: 0;
 }
+a {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: bold;
+}
+
+a:active {
+    text-decoration: underline;
+}
+progress {
+    width: 70%;
+    height: 20px;
+    color: #3fb6b2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
 .img-circle {
     border: 3px solid white;
     border-radius: 50%;
@@ -41,16 +80,16 @@ p {
         rgba(255, 255, 255, 0) 100%);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
     inset 0 0 1px rgba(255, 255, 255, 0.6);
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 .project {
     /*background-color: #fff;*/
-    /*margin: 10px;*/
-    width: 120px;
-    height: 50px;
+    width: 100%;
+    min-height: 50px;
     display: inline-block;
+    margin-right: -4px;
     background: linear-gradient(90deg,
         rgba(255, 255, 255, 0.0) 0%,
         rgba(255, 255, 255, 0.1) 25%,
@@ -58,7 +97,7 @@ p {
         rgba(255, 255, 255, 0.0) 100%);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
     inset 0 0 1px rgba(255, 255, 255, 0.6);
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -70,6 +109,25 @@ p {
         rgba(255, 255, 255, 0.1) 25%,
         rgba(255, 255, 255, 0.1) 75%,
         rgba(255, 255, 255, 0.1) 100%);
+    cursor: pointer;
+    cursor: hand;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .project {
+        width: 50%;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .project {
+        width: 25%;
+        box-sizing: border-box;
+    }
 }
 
 #header {
@@ -96,41 +154,6 @@ p {
     margin-top: 10px;
     color: grey;
 }
-table {
-    width: 100%;
-}
-table, th, td {
-    border: 2px solid #cecece;
-    border-collapse: collapse;
-    text-align: center;
-    table-layout: fixed;
-}
-.selected {
-    background-color: #f36f48;
-    font-weight: bold;
-    color: white;
-}
-li {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-progress {
-    width: 70%;
-    height: 20px;
-    color: #3fb6b2;
-    background: #efefef;
-}
-progress::-webkit-progress-bar {
-    background: #efefef;
-}
-progress::-webkit-progress-value {
-    background: #3fb6b2;
-} 
-progress::-moz-progress-bar {
-    color: #3fb6b2;
-    background: #efefef;
-}
-
 .copyright {
     font-size: 8pt;
     text-align: right;
