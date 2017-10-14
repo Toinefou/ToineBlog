@@ -8,8 +8,10 @@ body {
     padding: 10px;
     margin: 0;
     background-image: url("../pic/background.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 h1 {
     font-size: 15pt;
