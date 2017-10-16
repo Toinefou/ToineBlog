@@ -118,14 +118,11 @@ progress::-moz-progress-bar {
     }
 
     .project:hover {
-        /*background-color: #fff;*/
         background: linear-gradient(90deg,
             rgba(255, 255, 255, 0.1) 0%,
             rgba(255, 255, 255, 0.1) 25%,
             rgba(255, 255, 255, 0.1) 75%,
             rgba(255, 255, 255, 0.1) 100%);
-        cursor: pointer;
-        cursor: hand;
         font-weight: bold;
     }
 }
