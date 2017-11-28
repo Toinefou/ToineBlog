@@ -3,13 +3,10 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-html {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: 'Handlee', cursive;
-    font-size: 8pt;
+
+html, body {
+    font-family: monospace;
+    font-size: 6pt;
     padding: 0px;
     margin: 0;
     background-image: url("../pic/background.jpg");
@@ -18,54 +15,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-h1 {
-    font-size: 15pt;
-    color: #20bcd5;
-    text-align: center;
-    padding: 18px 0 18px 0;
-    margin: 0 0 10px 0;
-}
-h1 span {
-    border: 4px dashed #20bcd5;
-    padding: 10px;
-}
-p {
-    padding: 0;
-    margin: 0;
-}
+
 a {
     color: black;
-}
-a:link {
     text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: bold;
-}
-
-a:active {
-    text-decoration: underline;
-}
-progress {
-    width: 70%;
-    height: 20px;
-    color: #3fb6b2;
-    background: #efefef;
-}
-progress::-webkit-progress-bar {
-    background: #efefef;
-}
-progress::-webkit-progress-value {
-    background: #3fb6b2;
-} 
-progress::-moz-progress-bar {
-    color: #3fb6b2;
-    background: #efefef;
 }
 
 .img-circle {
@@ -76,11 +29,6 @@ progress::-moz-progress-bar {
     width: 90px;
     height: 90px;
     margin: auto;
-    -webkit-transition: all 0.1s ease-in-out 0s;
-    -moz-transition: all 0.1s ease-in-out 0s;
-    -ms-transition: all 0.1s ease-in-out 0s;
-    -o-transition: all 0.1s ease-in-out 0s;
-    transition: all 0.1s ease-in-out 0s;
 }
 
 .project {
@@ -93,7 +41,7 @@ progress::-moz-progress-bar {
     border-bottom-left-radius: 10px;
     margin: 10px;
     box-sizing: border-box;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     background: linear-gradient(90deg,
         rgba(255, 255, 255, 0.1) 0%,
         rgba(255, 255, 255, 0.1) 25%,
@@ -101,110 +49,26 @@ progress::-moz-progress-bar {
         rgba(255, 255, 255, 0.1) 100%);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1),
     inset 0 0 1px rgba(255, 255, 255, 0.6);
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
 }
 
 .element {
     position: relative;
     top: 100%;
-    margin-left: 7px;
+    margin-left: 9px;
 }
 
 .element:hover {
     font-weight: bold;
 }
 
-
-.project:hover {
-    height: 110px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background: linear-gradient(90deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.1) 25%,
-        rgba(255, 255, 255, 0.1) 75%,
-        rgba(255, 255, 255, 0.1) 100%);
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* For tablets: */
-    .img-circle {
-        position: absolute;
-        border: 3px solid white;
-        border-radius: 50%;
-        display: inline-block;
-        width: 90px;
-        height: 90px;
-        margin: auto;
-        -webkit-transition: all 0.1s ease-in-out 0s;
-        -moz-transition: all 0.1s ease-in-out 0s;
-        -ms-transition: all 0.1s ease-in-out 0s;
-        -o-transition: all 0.1s ease-in-out 0s;
-        transition: all 0.1s ease-in-out 0s;
-    }
-
-    .project {
-        position: absolute;
-        display: inline-block;
-        width: 90px;
-        height: 110px;
-        border-radius: 45px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        margin: 10px;
-        box-sizing: border-box;
-        padding-bottom: 17px;
-        background: linear-gradient(90deg,
-            rgba(255, 255, 255, 0.1) 0%,
-            rgba(255, 255, 255, 0.1) 25%,
-            rgba(255, 255, 255, 0.1) 75%,
-            rgba(255, 255, 255, 0.1) 100%);
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1),
-        inset 0 0 1px rgba(255, 255, 255, 0.6);
-        -webkit-transition: all 0.5s ease-in-out 0s;
-        -moz-transition: all 0.5s ease-in-out 0s;
-        -ms-transition: all 0.5s ease-in-out 0s;
-        -o-transition: all 0.5s ease-in-out 0s;
-        transition: all 0.5s ease-in-out 0s;
-    }
-
-    .element {
-        position: relative;
-        top: 100%;
-        margin-left: 7px;
-    }
-
-    .element:hover {
-        font-weight: bold;
-    }
-
-
-    .project:hover {
-        height: 110px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        background: linear-gradient(90deg,
-            rgba(255, 255, 255, 0.1) 0%,
-            rgba(255, 255, 255, 0.1) 25%,
-            rgba(255, 255, 255, 0.1) 75%,
-            rgba(255, 255, 255, 0.1) 100%);
-    }    
 }
 
 @media only screen and (min-width: 1025px) {
     /* For desktop: */
     .img-circle {
-        position: absolute;
         border: 1px solid white;
-        border-radius: 50%;
-        display: inline-block;
-        width: 90px;
-        height: 90px;
-        margin: auto;
         -webkit-transition: all 0.1s ease-in-out 0s;
         -moz-transition: all 0.1s ease-in-out 0s;
         -ms-transition: all 0.1s ease-in-out 0s;
@@ -217,19 +81,8 @@ progress::-moz-progress-bar {
     }
 
     .project {
-        width: 90px;
         height: 90px;
         border-radius: 45px;
-        margin: 10px;
-        box-sizing: border-box;
-        padding-bottom: 17px;
-        background: linear-gradient(90deg,
-            rgba(255, 255, 255, 0.1) 0%,
-            rgba(255, 255, 255, 0.1) 25%,
-            rgba(255, 255, 255, 0.1) 75%,
-            rgba(255, 255, 255, 0.1) 100%);
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1),
-        inset 0 0 1px rgba(255, 255, 255, 0.6);
         -webkit-transition: all 0.5s ease-in-out 0s;
         -moz-transition: all 0.5s ease-in-out 0s;
         -ms-transition: all 0.5s ease-in-out 0s;
@@ -238,19 +91,14 @@ progress::-moz-progress-bar {
     }
 
     .element {
-        position: relative;
-        top: 100%;
-        margin-left: 7px;
-        //transform: translateY(-50%);
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0s, opacity 1s linear;
+        -webkit-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+        -moz-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+        -ms-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+        -o-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+        transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
     }
-
-    .element:hover {
-        font-weight: bold;
-    }
-
 
     .project:hover {
         height: 110px;
@@ -270,12 +118,19 @@ progress::-moz-progress-bar {
     .project:hover > .element { 
         visibility: visible;
         opacity: 1;
+        -webkit-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -moz-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -ms-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -o-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
     }
 }
 
 .copyright {
+    position: absolute;
+    top: 97%;
+    left: 81%;
     font-size: 8pt;
     text-align: right;
-    padding-bottom: 10px;
     color: grey;
 }
