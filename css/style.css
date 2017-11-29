@@ -1,17 +1,21 @@
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 html {
+    height: 100%;
     padding: 0px;
     margin: 0px;
 }
 
 body {
+    height: 100%;
     font-family: monospace;
-    font-size: 6pt;
+    font-size: 8px;
     padding: 0px;
     margin: 0px;
     background-image: url("../pic/background.jpg");
@@ -64,6 +68,15 @@ a {
 
 .element:hover {
     font-weight: bold;
+}
+
+.copyright {
+    position: absolute;
+    top: 98%;
+    left: 61%;
+    font-size: 6px;
+    text-align: right;
+    color: grey;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -129,13 +142,11 @@ a {
         -o-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
         transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
     }
-}
 
-.copyright {
-    position: absolute;
-    top: 97%;
-    left: 81%;
-    font-size: 8pt;
-    text-align: right;
-    color: grey;
+    .copyright {
+        top: 97%;
+        left:86%;
+        font-size: 8px;
+    }
+
 }
