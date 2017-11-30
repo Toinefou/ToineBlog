@@ -35,10 +35,10 @@ a {
     display: inline-block;
     width: 90px;
     //height: 110px;
-    border-radius: 45px;
-    //border-bottom-right-radius: 10px;
-    //border-bottom-left-radius: 10px;
-    margin: 10px;
+    //border-radius: 45px;
+    border-radius: 50%;
+    border-top-left-radius: 0%;
+    margin: 0px;
     box-sizing: border-box;
     padding-bottom: 15px;
     background: linear-gradient(90deg,
@@ -60,6 +60,7 @@ a {
     position: absolute;
     //border: 3px solid white;
     border-radius: 50%;
+    border-top-left-radius: 0%;
     display: inline-block;
     width: 90px;
     height: 90px;
@@ -182,7 +183,7 @@ a {
     .menu:hover {
         height: 110px;
         border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 0px;
         background: linear-gradient(90deg,
             rgba(255, 255, 255, 0.1) 0%,
             rgba(255, 255, 255, 0.1) 25%,
