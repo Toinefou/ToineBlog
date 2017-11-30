@@ -126,10 +126,7 @@ a {
         -o-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
         transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
     }
-
-    #menu_image:hover {
-        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1),
-    }
+    
     .menu_item:hover {
         font-weight: bold;
     }
