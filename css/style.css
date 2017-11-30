@@ -33,14 +33,13 @@ a {
 .menu {
     position: absolute;
     display: inline-block;
+    height: 90px;
     width: 90px;
-    //height: 110px;
-    //border-radius: 45px;
+    margin: 0px;
+    padding-bottom: 15px;
     border-radius: 50%;
     border-top-left-radius: 0%;
-    margin: 0px;
     box-sizing: border-box;
-    padding-bottom: 15px;
     background: linear-gradient(90deg,
         rgba(255, 255, 255, 0.1) 0%,
         rgba(255, 255, 255, 0.1) 25%,
@@ -48,7 +47,6 @@ a {
         rgba(255, 255, 255, 0.1) 100%);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1),
     inset 0 0 1px rgba(255, 255, 255, 0.6);
-    height: 90px;
     -webkit-transition: all 0.5s ease-in-out 0s;
     -moz-transition: all 0.5s ease-in-out 0s;
     -ms-transition: all 0.5s ease-in-out 0s;
@@ -58,14 +56,13 @@ a {
 
 #menu_image {
     position: absolute;
-    //border: 3px solid white;
-    border-radius: 50%;
-    border-top-left-radius: 0%;
     display: inline-block;
-    width: 90px;
     height: 90px;
+    width: 90px;
     margin: auto;
     border: 1px solid white;
+    border-radius: 50%;
+    border-top-left-radius: 0%;
     -webkit-transition: all 0.1s ease-in-out 0s;
     -moz-transition: all 0.1s ease-in-out 0s;
     -ms-transition: all 0.1s ease-in-out 0s;
@@ -77,40 +74,14 @@ a {
     position: relative;
     top: 100%;
     margin-left: 9px;
-        visibility: hidden;
-        opacity: 0;
-        -webkit-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        -moz-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        -ms-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        -o-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    -moz-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    -ms-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    -o-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
 }
-
-/*#menu:active {
-    height: 110px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background: linear-gradient(90deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.1) 25%,
-        rgba(255, 255, 255, 0.1) 75%,
-        rgba(255, 255, 255, 0.1) 100%);
-}
-
-#menu:active > #menu_image { 
-    border: 3px solid white;
-}
-
-#menu:active > .menu_item { 
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    -moz-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    -ms-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    -o-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-}  font-weight: bold;
-}*/
 
 #copyright {
     position: absolute;
@@ -123,45 +94,6 @@ a {
 
 @media only screen and (max-width: 767px) {
     /* For phones: */
-    .menu_toggled {
-    position: absolute;
-    display: inline-block;
-    width: 90px;
-    height: 110px;
-    border-radius: 45px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin: 10px;
-    box-sizing: border-box;
-    padding-bottom: 15px;
-    background: linear-gradient(90deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.1) 25%,
-        rgba(255, 255, 255, 0.1) 75%,
-        rgba(255, 255, 255, 0.1) 100%);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1),
-    inset 0 0 1px rgba(255, 255, 255, 0.6);
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-
-/*.menu_toggled #menu_image { 
-    border: 3px solid white;
-}
-
-.menu_toggled .menu_item { 
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    -moz-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    -ms-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    -o-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-    transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
-}*/
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -170,16 +102,6 @@ a {
 
 @media only screen and (min-width: 1025px) {
     /* For desktop: */
-    .menu {
-        height: 90px;
-        border-radius: 45px;
-        -webkit-transition: all 0.5s ease-in-out 0s;
-        -moz-transition: all 0.5s ease-in-out 0s;
-        -ms-transition: all 0.5s ease-in-out 0s;
-        -o-transition: all 0.5s ease-in-out 0s;
-        transition: all 0.5s ease-in-out 0s;
-    }
-
     .menu:hover {
         height: 110px;
         border-bottom-right-radius: 10px;
@@ -205,29 +127,9 @@ a {
         transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
     }
 
-    #menu_image {
-        border: 1px solid white;
-        -webkit-transition: all 0.1s ease-in-out 0s;
-        -moz-transition: all 0.1s ease-in-out 0s;
-        -ms-transition: all 0.1s ease-in-out 0s;
-        -o-transition: all 0.1s ease-in-out 0s;
-        transition: all 0.1s ease-in-out 0s;
-    }
-
     #menu_image:hover {
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.1),
     }
-
-    .menu_item {
-        visibility: hidden;
-        opacity: 0;
-        -webkit-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        -moz-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        -ms-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        -o-transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-        transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-    }
-
     .menu_item:hover {
         font-weight: bold;
     }
