@@ -94,10 +94,58 @@ a {
 
 @media only screen and (max-width: 767px) {
     /* For phones: */
+    .menu {
+        height: 110px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.1) 25%,
+            rgba(255, 255, 255, 0.1) 75%,
+            rgba(255, 255, 255, 0.1) 100%);
+    }
+
+    #menu_image { 
+        border: 3px solid white;
+    }
+
+    .menu_item { 
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -moz-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -ms-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -o-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* For tablets: */
+    .menu {
+        height: 110px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.1) 25%,
+            rgba(255, 255, 255, 0.1) 75%,
+            rgba(255, 255, 255, 0.1) 100%);
+    }
+
+    #menu_image { 
+        border: 3px solid white;
+    }
+
+    .menu_item { 
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -moz-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -ms-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        -o-transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+        transition: visibility 0.5s ease-in-out 0.3s, opacity 0.5s ease-in-out 0.3s;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
