@@ -83,6 +83,10 @@ a {
     transition: visibility 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
 }
 
+#current_item {
+    font-weight: bold;
+}
+
 #copyright {
     position: absolute;
     top: 98%;
